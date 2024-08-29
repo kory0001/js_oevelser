@@ -10,15 +10,36 @@
 <body>
     <ul></ul>
     <script>
-        const bil = {
+
+        /**Følgende er et såkaldt objekter  (inde i et array) - JASON er objekter skrevet i java-script**/
+        const biler = [{
             brand: "BMW",
             model: "M3",
             drivmiddel: "Diesel",
-            passagerer: ["Peter", "Alan", "Mor"],
+            udstyr: ["sædevarme", "chromfælge", "automatgear"],
             lak: "blank sort",
-        };
+        },
+
+        {
+            brand: "VW",
+            model: "i4",
+            drivmiddel: "El",
+            feautures: ["Alufælge", "AC", "soltag"],
+            lak: "blank hvid",
+        },
+        {
+            brand: "Volvo",
+            model: "Amazone",
+            drivmiddel: "Benzin",
+            feautures: ["Krog", "servo", "barnesæde"],
+            lak: "blank sølv",
+        }
+
+        ]
         /**Find dette objekt, og tilhørende oplysninger, ved at skrive "bil" i liveserverens konsol**/
         /**Den findes ikke på selve siden, men ligger når den kaldes i konsollen - har ikke noget med nedenstående at gøre**/
+
+
 
         const liste = document.querySelector("ul");
         const frugter = ["banan", "æble", "pære"]
