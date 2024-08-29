@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playliste</title>
+</head>
+
+<body>
+    <h1>Playliste</h1>
+    <ul id="playliste"></ul>
+
+    <script>
+        const liste = document.querySelector("ul");
+        const frugter = ["sang 1", "sang 2", "sang 3", "sang 4", "sang 5", "sang 6", "sang 7", "sang 8", "sang 9", "sang 10"]
+
+        frugter.forEach(putListe);
+        function putListe(element) {
+            console.log(element)
+            liste.innerHTML += "<li>" + element + "</li>"
+        }
+    </script>
+</body>
+
+</html>
